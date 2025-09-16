@@ -3,5 +3,19 @@
   "queries": [
     "novel image augmentation",
     "data augmentation image classification"
+  ],
+  "research_study_list": [
+    {
+      "title": "Data Augmentation for Meta-Learning"
+    },
+    {
+      "title": "Effective Data Augmentation With Diffusion Models"
+    },
+    {
+      "title": "Data Augmentation for Meta-Learning"
+    },
+    {
+      "title": "RandAugment: Practical Automated Data Augmentation with a Reduced Search Space"
+    }
   ]
 }
