@@ -1,0 +1,19 @@
+# Minimal configuration used by CI or quick developer sanity checks
+
+seed: 12
+
+# dataset locations – users must download datasets themselves; we only verify
+# their presence in src/preprocess.py
+
+# keep disk footprint low for smoke test by pointing to a small subset
+# (here we assume the user symlinked a handful of images into this folder)
+dataset_root: datasets/smoke_subset
+
+trainer:
+  epochs: 2
+  batch_size: 4
+  learning_rate: 1e-4
+
+model:
+  backbone: timm/resnet50.a1_in1k
+  num_classes: 2

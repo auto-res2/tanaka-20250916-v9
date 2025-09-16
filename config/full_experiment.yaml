@@ -1,0 +1,36 @@
+# Full-scale configuration reproducing Experiment-1 settings (Waterbirds,
+# ResNet-50 backbone).  Thresholds and hyper-parameters follow the paper.
+
+seed: 35
+
+dataset_root: datasets/Waterbirds
+
+trainer:
+  epochs: 100
+  batch_size: 512
+  learning_rate: 3e-4
+
+model:
+  backbone: timm/resnet50.a1_in1k
+  num_classes: 2
+  label_smoothing: 0.1
+  mixup_alpha: 0.2
+  weight_decay: 0.05
+
+irm:
+  penalty_weight: 1.0
+  k_candidates: 6
+
+# Two knobs exposed by ICI-Diff generation
+augmentation:
+  k_candidates: 6
+  beta_penalty: 0.5
+
+# All outputs are placed under this directory (created at runtime)
+output_root: .research/iteration1
+
+# Each phase prints and stores JSON metrics so downstream analysis scripts
+# can consume them easily.
+
+# Environment variable usage example (HF_TOKEN)
+huggingface_token: ${HF_TOKEN}

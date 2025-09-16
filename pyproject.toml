@@ -1,1 +1,18 @@
-# Please list the required python packages.
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ici_diff_experiments"
+version = "0.1.0"
+description = "Modular research codebase for ICI-Diff fairness experiments"
+readme = "README.md"
+authors = [
+    { name="Anonymous Researcher", email="research@example.com" }
+]
+requires-python = ">=3.9"
+# minimal dependencies that our stub modules actually import
+dependencies = [
+    "torch>=1.9.0",
+    "pyyaml>=6.0",
+]
