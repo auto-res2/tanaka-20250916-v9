@@ -27,7 +27,7 @@ augmentation:
   beta_penalty: 0.5
 
 # All outputs are placed under this directory (created at runtime)
-output_root: .research/iteration1
+output_root: .research/iteration2
 
 # Each phase prints and stores JSON metrics so downstream analysis scripts
 # can consume them easily.

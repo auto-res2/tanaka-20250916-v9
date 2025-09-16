@@ -8,6 +8,7 @@ seed: 12
 # keep disk footprint low for smoke test by pointing to a small subset
 # (here we assume the user symlinked a handful of images into this folder)
 dataset_root: datasets/smoke_subset
+output_root: .research/iteration2
 
 trainer:
   epochs: 2
@@ -17,3 +18,9 @@ trainer:
 model:
   backbone: timm/resnet50.a1_in1k
   num_classes: 2
+
+ici_diff:
+  k_candidates: 2
+  beta_penalty: 0.1
+  context_clusters: 3
+  generation_steps: 10

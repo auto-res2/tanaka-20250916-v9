@@ -11,8 +11,21 @@ authors = [
     { name="Anonymous Researcher", email="research@example.com" }
 ]
 requires-python = ">=3.9"
-# minimal dependencies that our stub modules actually import
+# comprehensive dependencies for ICI-Diff pipeline
 dependencies = [
     "torch>=1.9.0",
     "pyyaml>=6.0",
+    "numpy>=1.21.0",
+    "transformers>=4.20.0",
+    "diffusers>=0.20.0",
+    "timm>=0.9.0",
+    "datasets>=2.0.0",
+    "pillow>=8.0.0",
+    "matplotlib>=3.5.0",
+    "scikit-learn>=1.0.0",
+    "scipy>=1.7.0",
+    "opencv-python>=4.5.0",
+    "accelerate>=0.20.0",
+    "safetensors>=0.3.0",
+    "torchvision>=0.10.0",
 ]

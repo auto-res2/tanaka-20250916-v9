@@ -26,7 +26,7 @@ def _load_cfg(path: Path) -> Dict[str, Any]:
     with path.open() as f:
         cfg = yaml.safe_load(f)
     # inject runtime derived fields
-    cfg.setdefault("output_root", ".research/iteration1")
+    cfg.setdefault("output_root", ".research/iteration2")
     cfg.setdefault("seed", 0)
     return cfg
 
